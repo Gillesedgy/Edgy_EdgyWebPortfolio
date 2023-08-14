@@ -1,0 +1,16 @@
+.section {
+  border: 2px solid rgb(244, 238, 238);
+}
+// TODO: UPDATE HEIGHT OF DIV AND ADD ANIMATION AND STYLES TO CARD.. FROSTED
+.About {
+  color: aliceblue;
+  gap: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  h2 {
+    text-decoration: underline;
+  }
+}

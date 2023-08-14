@@ -1,5 +1,4 @@
 .Home {
-  background-color: black;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,5 +10,15 @@
   &__titleB {
     font-size: 200px;
     margin: 0; // this allows them to be close by removing the default margin on div.. phewww!!
+  }
+  &__p {
+    font-size: 1.4em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+    em {
+      font-weight: 600;
+      color: rgb(254, 250, 250);
+    }
   }
 }
