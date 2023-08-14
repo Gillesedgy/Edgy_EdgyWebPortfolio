@@ -6,12 +6,13 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 function App() {
+  //Todo: hide navbar or  something.. not sure yet.. looks good for now
   return (
     <div className="App">
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />

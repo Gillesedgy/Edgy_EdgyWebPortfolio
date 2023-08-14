@@ -1,0 +1,15 @@
+.Home {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  //
+  &__titleA,
+  &__titleB {
+    font-size: 200px;
+    margin: 0; // this allows them to be close by removing the default margin on div.. phewww!!
+  }
+}
