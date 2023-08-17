@@ -27,9 +27,9 @@ function Skills() {
       {/* Card body starts here..  */}
       <div className="Skills__card_body">
         {" "}
-        {skillsDisplayed.map((skill, index) => (
+        {skillsDisplayed.map((skill) => (
           // Card front face starts here...
-          <div key={skill.id} className="Skills__card">
+          <div key={skill.title} className="Skills__card">
             <div className="Skills__title">
               <h1>{skill.title}</h1>
             </div>
