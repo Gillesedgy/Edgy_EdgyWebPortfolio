@@ -27,16 +27,20 @@ function Skills() {
       {/* Card body starts here..  */}
       <div className="Skills__card_body">
         {" "}
-        {skillsDisplayed.map((skill) => (
+        {skillsDisplayed.map((skill, index) => (
           // Card front face starts here...
           <div key={skill.id} className="Skills__card">
-            <div key={skill.title} className="Skills__title">
+            <div className="Skills__title">
               <h1>{skill.title}</h1>
             </div>
             <img src="" alt="" />
+            {/* Card Name */}
             <div className="Skills__card_name">Name:{skill.name}</div>
+            {/* Card Quote*/}
             <div className="Skills__card_quote">quote:{skill.quote}</div>
+            {/* Card Level */}
             <div className="Skills__card_level">Name:{skill.level}</div>
+            {/* Card NUmber */}
             <div className="Skills__card_number">
               <p>Number:{skill.cardNumber}</p>
             </div>

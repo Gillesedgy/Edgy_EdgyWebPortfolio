@@ -2,7 +2,6 @@ import React from "react";
 import "../Styles/About.scss";
 
 function About() {
-  
   return (
     <div className="About">
       {/* Passion & Interests */}
