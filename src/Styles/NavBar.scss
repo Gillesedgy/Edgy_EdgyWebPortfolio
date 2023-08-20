@@ -1,9 +1,13 @@
 .Navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
   display: flex;
   justify-content: space-around;
   background-color: #0f0e0e;
   padding: 1rem;
-  margin-bottom: 50px; // Placeholder for now
+  margin-bottom: 100px; // Placeholder for now
 
   &__link {
     color: rgb(239, 236, 236);

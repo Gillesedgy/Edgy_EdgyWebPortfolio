@@ -14,3 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+section {
+  padding-top: 100px;
+  margin-top: -60px;
+}
+/* Added section here tempo - keeps nav bar from blocking content at top lvl */
