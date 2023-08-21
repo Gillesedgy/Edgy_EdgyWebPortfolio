@@ -9,8 +9,6 @@ import { FaLocationPinLock } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 //
-
-//
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
