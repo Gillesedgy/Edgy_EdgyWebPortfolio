@@ -15,6 +15,7 @@ function NavBar() {
     return routerLocation.hash === `#${pathname}`;
   }; //* set Active checks if the pathName given as the arg is equal to the current pathName in the router location. if true=> updates assight the nav active class. else=> nada..
 
+  
   useEffect(() => {
     const hash = routerLocation.hash;
     if (hash) {
