@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../Styles/NavBar.scss";
 /**
- * /IMOW: The nav abr should, obviously allow me to navigate to different pages of the app.
+ * /IMOW: The nav bar should, obviously allow me to navigate to different pages of the app.
  * I also want each link to serve as an indicator to what page the user is currently on. also persist even of the page refreshes. I DO NOT WAN TO USE LOCAL STORAGE -> B/C it will save the data on the local machine and will highlight
  * One way to do this is to use some sort of Window.location or location -_o_-.. idk
  *

@@ -1,24 +1,53 @@
 .Home {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-//   color: aliceblue;
-  //
-  &__titleA,
-  &__titleB {
-    font-size: 200px;
-    margin: 0; // this allows them to be close by removing the default margin on div.. phewww!!
-  }
-  &__p {
-    font-size: 1.4em;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 100px;
+  text-align: center;
 
-    em {
-      font-weight: 600;
-      color: rgb(255, 255, 255);
+  &__background {
+    position: fixed;
+    left: 0;
+    // top:0;
+    width: 100%;
+    z-index: 100;
+
+    img {
+      width: 100%;
     }
+  }
+
+  &__scr-bg {
+    position: fixed;
+    width: 100%;
+    left: 0;
+
+    img {
+      width: 50vw;
+    }
+  }
+  &__scr-info {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 50vw;
+  }
+
+  &__name {
+    border: 2px solid red;
+    color: aqua;
+  }
+
+  &__bio,
+  &__textSlider {
+    margin-bottom: 20px;
+    color: aquamarine;
+  }
+  &__textSlider {
+    border: 2px solid green;
+    height: 50px;
+    font-weight: 900;
+    font-size: 2rem;
+    // position: relative;
   }
 }

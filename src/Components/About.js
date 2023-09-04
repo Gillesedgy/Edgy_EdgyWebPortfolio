@@ -4,7 +4,7 @@ import "../Styles/About.scss";
 function About() {
   return (
     <div className="About">
-      {/* Passion & Interests */}
+      <h1>READ AND MOVE THINGS AROUNF BEFORE SUBMITTING</h1>
       <div className="About__passionAndInterests  section">
         <h2>Passions and Interests</h2>
         <p>
@@ -23,7 +23,6 @@ function About() {
         </p>
       </div>
 
-      {/* Philosophy  */}
       <div className="About__philosophy section">
         <h2>Coding Philosophy</h2>
         <p>
@@ -34,8 +33,6 @@ function About() {
           essential to me.
         </p>
       </div>
-
-      {/* Outside of Work */}
       <div className="About__freetime section">
         <h2>Outside of Coding</h2>
         <p>
@@ -49,7 +46,7 @@ function About() {
           and enjoy the beauty of nature.
         </p>
       </div>
-      {/* Tech enthusiast */}
+
       <div className="About__tech-enthusiast section">
         <h2>Tech Enthusiast</h2>
         <p>
@@ -65,7 +62,7 @@ function About() {
           relevant in the fast-paced tech landscape.
         </p>
       </div>
-      {/* Education & Certifications */}
+
       <div className="About__education-cert section">
         <h2>Education and Certifications</h2>
         <p>
