@@ -1,3 +1,4 @@
+// @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&display=swap");
 .Home {
   display: flex;
   flex-direction: column;
@@ -8,9 +9,8 @@
   &__background {
     position: fixed;
     left: 0;
-    // top:0;
     width: 100%;
-    z-index: 100;
+    // z-index: 1;
 
     img {
       width: 100%;
@@ -26,26 +26,49 @@
       width: 50vw;
     }
   }
-  &__scr-info {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 50vw;
-  }
-
   &__name {
-    color: #007bff;
+    color: #0a74e6;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-style: "Merriweather", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: rgb(66, 62, 62) 2px 3px;
+    font-style: normal;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  &__scr-info {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: fixed;
+    top: 50vw;
   }
 
   &__bio,
   &__textSlider {
-    margin-bottom: 20px;
+    width: 100%;
+    left: 0;
     color: #007bff;
   }
+  // &__bio {
+  //   font-size: 1.4rem;
+  //   font-family: "Merryweather", sans-serif;
+  //   font-optical-sizing: auto;
+  // text-shadow: rgb(66, 62, 62) 1px 1px;
+  // }
   &__textSlider {
     height: 50px;
-    font-weight: 900;
-    font-size: 2rem;
-
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: rgb(66, 62, 62) 4px 2px;
   }
 }

@@ -13,7 +13,7 @@ export const TextSlider = () => {
 
   const [isDelete, setIsDelete] = useState(false); // responsible for managing which word/title being removed.. delted animatiion
   const timer = 2000; // sets the transition period between shuffling each title
-  const [typingSpeed, setTypingSpeed] = useState(300 - Math.random() * 100); // Manages typing speed animation of each letter
+  const [typingSpeed, setTypingSpeed] = useState(200 - Math.random() * 100); // Manages typing speed animation of each letter
 
   // useEffect => to handle the typing animation effect
 

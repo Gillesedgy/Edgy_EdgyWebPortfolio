@@ -9,7 +9,7 @@ export function projectData() {
       url: "https://google.com/",
     },
     {
-      title: "Not-It",
+      title: "Note-It",
       image: imagess,
       description:
         "Not-It is a sleek and intuitive note-taking app that allows users to organize their thoughts and ideas efficiently. Features include rich text editing, note categorization, and a powerful search function.",

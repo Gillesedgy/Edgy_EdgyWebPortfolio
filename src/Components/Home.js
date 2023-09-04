@@ -6,7 +6,6 @@ import { TextSlider } from "./Container/TextSlider";
 // prlx
 import Plx from "react-plx";
 function Home() {
-  //Todo: Apply animation to titles
   return (
     <div className="Home">
       <Plx
@@ -58,7 +57,7 @@ function Home() {
           },
         ]}
       >
-        {" "}
+        {/* <span className="Home__name">Hi</span>{" "} */}
         <div className="Home__image">
           <img src={headshot} alt={headshot} />
         </div>
@@ -66,7 +65,7 @@ function Home() {
       {/* name, bio and textSlider */}
 
       <Plx
-        className="Home__scr-info"
+        className="Home__scr-info text"
         parallaxData={[
           {
             start: 0,
@@ -82,16 +81,17 @@ function Home() {
         ]}
       >
         {" "}
-        <div className="Home__name">Edgy Gilles</div>
-        <div className="Home__textSlider">
-          <em>
-            <TextSlider />
-          </em>
-        </div>
-        <div className="Home__bio">
-          on a journey of continuous learning and growth. Here's a glimpse into
-          my world beyond the lines of code.
+        <div className="Home__name text">
+          {" "}
+          <span>Edgy Gilles</span>
         </div>{" "}
+        <div className="Home__textSlider">
+          <TextSlider />
+        </div>
+        {/* <p className="Home__bio">
+          Been on a journey of continuous learning and growth. Here's a glimpse
+          into my world beyond the lines of code.
+        </p>{" "} */}
       </Plx>
 
       {/* //Todo: Change font to something more comic book, fun  */}
