@@ -13,7 +13,7 @@ function App() {
   //Todo: hide navbar or  something.. not sure yet.. looks good for now
 
   return (
-    <div className="App">
+    <div className="App" >
       <Router>
         <section id="home">
           {" "}
@@ -41,7 +41,7 @@ function App() {
           </section>
         </Plx>
         {/*  */}
-        <Plx
+        {/* <Plx
           parallaxData={[
             {
               start: "self",
@@ -55,12 +55,12 @@ function App() {
               ],
             },
           ]}
-        >
+        > */}
           {" "}
           <section id="skills">
             <Skills />
           </section>
-        </Plx>
+        {/* </Plx> */}
         {/*  */}
         <Plx
           parallaxData={[
