@@ -19,8 +19,13 @@ function Home() {
             properties: [
               {
                 startValue: 1,
-                endValue: 1.3,
+                endValue: 1.5,
                 property: "scale",
+              },
+              {
+                startValue: 1,
+                endValue: 0,
+                property: "opacity",
               },
             ],
           },
@@ -41,7 +46,7 @@ function Home() {
             properties: [
               {
                 startValue: 1,
-                endValue: 1.18,
+                endValue: 1.3,
                 property: "scale",
               },
               {

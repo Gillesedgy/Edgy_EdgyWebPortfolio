@@ -21,7 +21,7 @@
     position: fixed;
     width: 100%;
     left: 0;
-
+    margin-top: 10px; //
     img {
       width: 50vw;
     }
@@ -34,7 +34,6 @@
   }
 
   &__name {
-    border: 2px solid red;
     color: aqua;
   }
 
@@ -44,7 +43,6 @@
     color: aquamarine;
   }
   &__textSlider {
-    border: 2px solid green;
     height: 50px;
     font-weight: 900;
     font-size: 2rem;

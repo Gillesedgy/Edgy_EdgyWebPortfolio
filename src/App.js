@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Plx from "react-plx";
 import {
   // Navbar,
@@ -12,51 +12,80 @@ import NavBar from "./Components/NavBar";
 function App() {
   //Todo: hide navbar or  something.. not sure yet.. looks good for now
 
-  const parallaxData = [
-    {
-      start: "self",
-      duration: 7000,
-      properties: [
-        {
-          startValue: 0,
-          endValue: 2,
-          property: "opacity",
-        },
-      ],
-    },
-  ];
-
   return (
     <div className="App">
       <Router>
-        <NavBar />
         <section id="home">
+          {" "}
+          <NavBar />
           <Home />
         </section>
-        <Plx parallaxData={parallaxData}>
-          {" "}
+        <div className="empty" style={{ height: "130vw" }}></div>
+        <Plx
+          parallaxData={[
+            {
+              start: "self",
+              duration: 800,
+              properties: [
+                {
+                  startValue: 0,
+                  endValue: 360,
+                  property: "rotate",
+                },
+              ],
+            },
+          ]}
+        >
           <section id="about">
             <About />
           </section>
         </Plx>
-        <Plx parallaxData={parallaxData}>
+        {/*  */}
+        <Plx
+          parallaxData={[
+            {
+              start: "self",
+              duration: 1100,
+              properties: [
+                {
+                  startValue: 4000,
+                  endValue: 0,
+                  property: "translateX",
+                },
+              ],
+            },
+          ]}
+        >
           {" "}
           <section id="skills">
             <Skills />
           </section>
         </Plx>
-        <Plx parallaxData={parallaxData}>
+        {/*  */}
+        <Plx
+          parallaxData={[
+            {
+              start: "self",
+              duration: 1100,
+              properties: [
+                {
+                  startValue: -5000,
+                  endValue: 0,
+                  property: "translateX",
+                },
+              ],
+            },
+          ]}
+        >
           {" "}
           <section id="projects">
             <Projects />
           </section>
         </Plx>
-        <Plx parallaxData={parallaxData}>
-          {" "}
-          <section id="contact">
-            <Contact />
-          </section>
-        </Plx>
+        {/*  */}{" "}
+        <section id="contact">
+          <Contact />
+        </section>
       </Router>
     </div>
   );

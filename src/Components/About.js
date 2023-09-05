@@ -4,7 +4,6 @@ import "../Styles/About.scss";
 function About() {
   return (
     <div className="About">
-      <h1>READ AND MOVE THINGS AROUNF BEFORE SUBMITTING</h1>
       <div className="About__passionAndInterests  section">
         <h2>Passions and Interests</h2>
         <p>
