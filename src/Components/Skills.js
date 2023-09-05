@@ -14,8 +14,7 @@ function Skills() {
   const skillsDisplayed =
     selectedSkills === "getCoreSkills" ? getCoreSkills : getSoftSkills; // this allows me to map thru both sets of data, soft and core
   console.log("display Skills: ", skillsDisplayed);
-  // console.log("Core Skills: ", getCoreSkills);
-  // console.log("Soft Skills: ", getSoftSkills);
+  
   const handleSKillsChange = (category) => {
     console.log("triggered");
     setSelectedSkills(category);
@@ -26,7 +25,7 @@ function Skills() {
 
   return (
     <div className="SkillsContainer">
-      <h1 className="page-title"> My Skills</h1>{" "}
+      {/* <h1 className="page-title"> My Skills</h1>{" "} */}
       <div className="Skills__Buttons buttons">
         <button onClick={() => handleSKillsChange("getCoreSkills")}>
           Core Skills
@@ -36,7 +35,7 @@ function Skills() {
           Soft Skills
         </button>
       </div>
-      <Plx
+      {/* <Plx
         parallaxData={[
           {
             start: "self",
@@ -50,7 +49,7 @@ function Skills() {
             ],
           },
         ]}
-      >
+      > */}
         <div className="Skills">
           {/* Card body starts here..  */}
           {skillsDisplayed.map((skills) => (
@@ -111,9 +110,8 @@ function Skills() {
             </div>
           ))}
         </div>
-      </Plx>
+      {/* </Plx> */}
     </div>
   );
 }
-
 export default Skills;

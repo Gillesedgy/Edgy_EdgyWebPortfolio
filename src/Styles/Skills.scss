@@ -4,9 +4,10 @@
   margin-top: 70px;
 }
 .SkillsContainer {
-  height: 105vh;
   border: 2px solid blueviolet;
-  
+  max-width: 90vw;
+  margin: auto;
+  height: 100vh;
 }
 .Skills {
   display: flex;
@@ -34,7 +35,6 @@
     border-top-right-radius: 4px;
     border-bottom-left-radius: 6%;
     border-bottom-right-radius: 6%;
-
   }
 
   &__card-frame {
@@ -190,7 +190,7 @@
   margin: 20px 0;
 
   button {
-    z-index: 800;
+    z-index: 900;
     position: relative;
     background-color: #0078d7; // A color that matches the MTG theme
     color: white;

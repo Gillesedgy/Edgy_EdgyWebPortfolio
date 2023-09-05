@@ -81,11 +81,13 @@ function Home() {
         ]}
       >
         {" "}
-        <div className="Home__name text">
+        <header className="Home__heder text">
           {" "}
-          <span>Edgy </span>
-          <span>Gilles</span>
-        </div>{" "}
+          <h1 className="Home__name">
+            Edgy <span>Gilles</span>{" "}
+          </h1>
+          {/* //Todo: update CSS */}
+        </header>{" "}
         <div className="Home__textSlider">
           <TextSlider />
         </div>

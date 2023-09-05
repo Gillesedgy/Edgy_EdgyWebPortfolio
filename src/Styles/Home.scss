@@ -30,10 +30,9 @@
     color: #007bff;
     text-align: center;
     text-transform: uppercase;
-
     font-style: "Merriweather", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.5rem;
     text-shadow: rgb(66, 62, 62) 2px 2px;
     position: relative;
     padding: 0;
@@ -45,7 +44,7 @@
     flex-direction: column;
     width: 50%;
     position: fixed;
-    top: 47vw;
+    top: 44vw;
   }
 
   // &__bio,
@@ -63,7 +62,7 @@
   &__textSlider {
     height: 50px;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Merriweather", serif;
     font-style: normal;
     text-shadow: rgb(66, 62, 62) 4px 2px;
@@ -71,7 +70,7 @@
 }
 
 //MEDIA QUEries
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   .Home {
     &__background {
       // display: none;
@@ -88,7 +87,7 @@
     }
 
     &__scr-info {
-      top: 43.5vw;
+      top: 42vw;
     }
   }
 }

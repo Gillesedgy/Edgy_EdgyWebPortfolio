@@ -1,7 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Plx from "react-plx";
 import {
-  // Navbar,
   Home,
   About,
   Skills,
@@ -10,8 +9,6 @@ import {
 } from "./Components/Container/components";
 import NavBar from "./Components/NavBar";
 function App() {
-  //Todo: hide navbar or  something.. not sure yet.. looks good for now
-
   return (
     <div className="App">
       <Router>
@@ -25,7 +22,8 @@ function App() {
           parallaxData={[
             {
               start: "self",
-              duration: 800,
+              startOffset: 50,
+              duration: 500,
               properties: [
                 {
                   startValue: 0,
@@ -40,29 +38,11 @@ function App() {
             <About />
           </section>
         </Plx>
-        <div className="empty" style={{ height: "50vw" }}></div>
-        {/*  */}
-        {/* <Plx
-          parallaxData={[
-            {
-              start: "self",
-              duration: 1100,
-              properties: [
-                {
-                  startValue: 4000,
-                  endValue: 0,
-                  property: "translateX",
-                },
-              ],
-            },
-          ]}
-        > */}{" "}
         <section id="skills">
+          <h1 style={{ height: "30vw" }}>SKILLS</h1>
           <Skills />
         </section>
-        {/* </Plx> */}
         <div className="empty" style={{ height: "40vw" }}></div>
-        {/*  */}
         <Plx
           parallaxData={[
             {
@@ -83,8 +63,7 @@ function App() {
             <Projects />
           </section>
         </Plx>{" "}
-        <div className="empty" style={{ height: "10vw" }}></div>
-        {/*  */}{" "}
+        <div className="empty" style={{ height: "10vw" }}></div>{" "}
         <section id="contact">
           <Contact />
         </section>
