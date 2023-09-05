@@ -1,16 +1,30 @@
-.section {
-  border: 2px solid rgb(244, 238, 238);
-}
-// TODO: UPDATE HEIGHT OF DIV AND ADD ANIMATION AND STYLES TO CARD.. FROSTED
 .About {
-  color: aliceblue;
-  gap: 10px;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  h2 {
-    text-decoration: underline;
+  // Background and general styling
+  // background: #f4f4f4; // Example background color
+  color: #f9f6f6; // Primary text color
+  padding: 20px;
+
+  .section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(233, 228, 228, 0.051);
+    border-radius: 16px;
+    box-shadow: 0 4px 5px rgba(136, 134, 134, 0.796);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(175, 173, 173, 0.4);
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      em {
+        color: #ff5200;
+        font-style: italic;
+      }
+    }
   }
 }
