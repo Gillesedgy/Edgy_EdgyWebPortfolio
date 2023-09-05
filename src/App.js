@@ -13,14 +13,14 @@ function App() {
   //Todo: hide navbar or  something.. not sure yet.. looks good for now
 
   return (
-    <div className="App" >
+    <div className="App">
       <Router>
         <section id="home">
           {" "}
           <NavBar />
           <Home />
         </section>
-        <div className="empty" style={{ height: "130vw" }}></div>
+        <div className="empty" style={{ height: "120vw" }}></div>
         <Plx
           parallaxData={[
             {
@@ -40,6 +40,7 @@ function App() {
             <About />
           </section>
         </Plx>
+        <div className="empty" style={{ height: "50vw" }}></div>
         {/*  */}
         {/* <Plx
           parallaxData={[
@@ -55,12 +56,12 @@ function App() {
               ],
             },
           ]}
-        > */}
-          {" "}
-          <section id="skills">
-            <Skills />
-          </section>
+        > */}{" "}
+        <section id="skills">
+          <Skills />
+        </section>
         {/* </Plx> */}
+        <div className="empty" style={{ height: "40vw" }}></div>
         {/*  */}
         <Plx
           parallaxData={[
@@ -81,7 +82,8 @@ function App() {
           <section id="projects">
             <Projects />
           </section>
-        </Plx>
+        </Plx>{" "}
+        <div className="empty" style={{ height: "10vw" }}></div>
         {/*  */}{" "}
         <section id="contact">
           <Contact />

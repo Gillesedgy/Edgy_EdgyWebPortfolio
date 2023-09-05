@@ -1,16 +1,16 @@
-// @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Pixels&display=swap");
 .Home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 40px;
   text-align: center;
 
   &__background {
     position: fixed;
-    left: 0;
-    width: 100%;
-    // z-index: 1;
+    // left: 0;
+    width: 90%;
+    z-index: 1;
 
     img {
       width: 100%;
@@ -23,23 +23,21 @@
     left: 0;
     margin-top: 10px; //
     img {
-      width: 50vw;
+      width: 46vw;
     }
   }
   &__name {
-    color: #0a74e6;
+    color: #007bff;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 5px;
+
     font-style: "Merriweather", sans-serif;
     font-weight: 700;
-    font-size: 3rem;
-    text-shadow: rgb(66, 62, 62) 2px 3px;
-    font-style: normal;
+    font-size: 24px;
+    text-shadow: rgb(66, 62, 62) 2px 2px;
     position: relative;
     padding: 0;
     margin: 0;
-    font-family: "Raleway", sans-serif;
   }
   &__scr-info {
     // border: 2px solid red;
@@ -47,10 +45,10 @@
     flex-direction: column;
     width: 50%;
     position: fixed;
-    top: 50vw;
+    top: 47vw;
   }
 
-  &__bio,
+  // &__bio,
   &__textSlider {
     width: 100%;
     left: 0;
@@ -65,10 +63,53 @@
   &__textSlider {
     height: 50px;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Merriweather", serif;
-    font-weight: 700;
     font-style: normal;
     text-shadow: rgb(66, 62, 62) 4px 2px;
+  }
+}
+
+//MEDIA QUEries
+@media only screen and (min-width: 1600px) {
+  .Home {
+    &__background {
+      // display: none;
+      // justify-content: center;
+      width: 85%;
+    }
+
+    &__scr-bg {
+      width: 100vw;
+
+      img {
+        // width: 43%;
+      }
+    }
+
+    &__scr-info {
+      top: 43.5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Home {
+    height: 120vh;
+    &__background {
+      display: none;
+    }
+    &__scr-bg {
+      bottom: 40%;
+      top: 40%;
+      img {
+        width: 100%;
+      }
+    }
+    &__name,
+    &__textSlider {
+      color: whitesmoke;
+      width: 100%;
+    }
   }
 }

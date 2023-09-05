@@ -83,7 +83,8 @@ function Home() {
         {" "}
         <div className="Home__name text">
           {" "}
-          <span>Edgy Gilles</span>
+          <span>Edgy </span>
+          <span>Gilles</span>
         </div>{" "}
         <div className="Home__textSlider">
           <TextSlider />
