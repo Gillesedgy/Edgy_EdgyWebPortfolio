@@ -18,7 +18,7 @@ function App() {
           <Home />
         </section>
         <div className="empty" style={{ height: "120vw" }}></div>
-        <Plx
+        {/* <Plx
           parallaxData={[
             {
               start: "self",
@@ -33,13 +33,12 @@ function App() {
               ],
             },
           ]}
-        >
+        > */}
           <section id="about">
             <About />
           </section>
-        </Plx>
+        {/* </Plx> */}
         <section id="skills">
-          <h1 style={{ height: "30vw" }}>SKILLS</h1>
           <Skills />
         </section>
         <div className="empty" style={{ height: "40vw" }}></div>

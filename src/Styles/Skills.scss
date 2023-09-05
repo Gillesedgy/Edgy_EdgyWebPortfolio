@@ -1,16 +1,13 @@
-.page-title {
-  border: 2px solid rgb(125, 103, 146);
-  text-align: center;
-  margin-top: 70px;
-}
 .SkillsContainer {
-  border: 2px solid blueviolet;
+  //   border: 2px solid blueviolet;
   max-width: 90vw;
   margin: auto;
+  overflow: auto;
   height: 100vh;
 }
 .Skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding-bottom: 4%;
@@ -18,34 +15,46 @@
 
   &__card-container {
     border: 1px solid #000000;
-    width: 375px;
-    height: 547px;
+    width: 375px; //
+    // aspect-ratio: 5 / 7;
+    height: 650px;
     margin: 0 auto;
-    margin-top: 42px;
+    margin-top: 20px;
     border-radius: 18px;
     box-sizing: border-box;
     box-shadow: -6px 7px 13px -2.5px gray;
-    background-color: #000000;
+    background-color: #2d2c2c;
+    //!
+    position: relative;
+    padding-bottom: 60px;
   }
-
   &__card-background {
-    height: 473px;
-    margin: 15px;
-    border-top-left-radius: 5px;
+    height: 575px;
+    margin: 15px 15px 0 15px;
+    border-top-left-radius: 6px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 6%;
-    border-bottom-right-radius: 6%;
+    border-bottom-right-radius: 6;
+    //!
+    background-color: black;
+    z-index: 0;
   }
 
   &__card-frame {
     z-index: 1;
     position: relative;
-    height: 108%;
-    max-width: 95%;
+    height: 100%;
+    max-width: 97%;
     top: 0.5%;
     left: 3.1%;
     display: flex;
     flex-direction: column;
+
+    border-radius: 5px;
+
+    p {
+      margin-bottom: 5px;
+    }
   }
 
   &__card-frame-header,
@@ -53,14 +62,16 @@
     border-left: 2px solid #c0c0c0;
     border-top: 1px solid #00b16a;
     border-right: 2px solid #00b16a;
-    // ADD TEXTURE FOR CARD BG
     display: flex;
     justify-content: space-between;
-    border-radius: 18px/40px;
-    margin-top: 11.5px;
+    border-radius: 18px;
+    margin-top: 12px;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 0 0 20px 0;
+    background-color: #d3ded6;
+    color: black;
+    //? padding: 8px 0;
+    flex-shrink: 0;
   }
 
   &__card-frame-type {
@@ -69,43 +80,46 @@
 
   &__card-name,
   &__card-type {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 5px;
     align-self: baseline;
-    font-weight: 500;
+    font-weight: 600;
+    //
+    word-wrap: break-word;
   }
 
   &__card-image,
   &__card-frame-header,
   &__card-frame-type {
-    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #0078d7, -3px 3px 2px 5px #171314;
-    margin-bottom: 7px;
+    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #0078d7, -2px 1px 1px 5px #171314;
+    // margin-bottom: 7px;
   }
 
   &__card-image {
-    height: 45%;
+    height: 50%;
     margin: 0 10px;
   }
 
   &__card-frame-text-box {
-    margin: 0 7px;
+    // margin: 0 7px;
+    color: #000000;
     background: #d3ded6;
     display: flex;
+    height: 500px;
     flex-direction: column;
     justify-content: space-around;
-    padding: 80px 5px;
-    box-sizing: border-box;
-    font-size: 15px;
-    box-shadow: 0 0 0 5px #0078d7, -3px 3px 2px 5px #171314;
+
+    font-size: 0.9em;
+    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #0078d7, -2px 1px 1px 5px #171314;
   }
 
   &__card-quote-text {
     font-style: italic;
-    padding: 10px 0;
-    font-size: 10px;
+    padding: 5px 0;
+    font-size: 0.7em;
   }
 
-  .inner-margin {
+  &__card-description {
     margin: 5px 1px;
   }
 
@@ -113,19 +127,25 @@
     color: #00b16a;
     display: flex;
     justify-content: space-between;
-    margin: 3px 13px 0 13px;
+    margin: 3px 9px 0 9px;
+
+    //!
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
   }
 
   &__card-fbi-left,
   &__card-fbi-right {
-    font-size: 10px;
+    font-size: 0.5em;
     position: relative;
     top: 6px;
   }
 
   &__card-fbi-right {
     text-align: right;
-    font-weight: 900;
+    font-weight: 800;
   }
 
   &__card-fbi-center {
@@ -192,9 +212,9 @@
   button {
     z-index: 900;
     position: relative;
-    background-color: #0078d7; // A color that matches the MTG theme
+    background-color: #0078d7;
     color: white;
-    border: 2px solid #fff; // Added a solid border for visibility
+    border: 2px solid #fff;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 5px;
@@ -204,7 +224,7 @@
     transition: transform 0.3s, box-shadow 0.3s;
 
     &:hover {
-      transform: translateY(-2px); // Slight lift effect
+      transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
 
@@ -217,6 +237,32 @@
     &:active {
       transform: translateY(1px); // Push down effect when clicked
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// Media Queires
+@media only screen and (max-width: 768px) {
+  .buttons {
+    button {
+      background-color: #00b16a;
+    }
+  }
+  .Skills {
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &__card-container {
+      width: 80%;
+      margin: 20px 10px;
+    }
+    &__card-image {
+    }
+    &__card-frame-text-box {
+      height: 250px;
     }
   }
 }

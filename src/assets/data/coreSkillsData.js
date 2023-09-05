@@ -1,11 +1,12 @@
-
-
+import backend from "../images/backendC.png";
+import frontend from "../images/frontendC.png";
+import webApp from "../images/webAppC.png";
 export function coreSkillsData() {
   return [
     {
       title: "Frontend Development",
       name: "Zephyrion, the UI Artificer",
-      // image: frontend,
+      image: frontend,
       description:
         "Proficient in HTML, CSS, and JavaScript, The Frontend Enchanter is the master of user experiences in the digital realm. With a magical touch, they craft captivating visuals and intuitive interfaces that bring software and websites to life.",
       // icon: <SiFrontendmentor />,
@@ -36,7 +37,7 @@ export function coreSkillsData() {
     {
       title: "Backend Development",
       name: "Cipherex, the Server Magus",
-      // image: backend,
+      image: backend,
       description:
         "I architect databases, develop APIs, and construct the backbone that supports seamless user interactions.",
       // icon: <SiBackendless />,
@@ -62,7 +63,7 @@ export function coreSkillsData() {
     {
       title: "Web Applications",
       name: "Aetherweb",
-      // image: webApp,
+      image: webApp,
       description:
         "By combining frontend and backend technologies, I create platforms that solve problems, streamline processes, and provide users with intuitive interfaces to navigate through a digital wonderland.",
       // icon: <AiOutlineAppstoreAdd />,
@@ -144,5 +145,3 @@ export function coreSkillsData() {
     },
   ];
 }
-
-

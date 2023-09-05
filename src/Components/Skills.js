@@ -14,7 +14,7 @@ function Skills() {
   const skillsDisplayed =
     selectedSkills === "getCoreSkills" ? getCoreSkills : getSoftSkills; // this allows me to map thru both sets of data, soft and core
   console.log("display Skills: ", skillsDisplayed);
-  
+
   const handleSKillsChange = (category) => {
     console.log("triggered");
     setSelectedSkills(category);
@@ -25,7 +25,8 @@ function Skills() {
 
   return (
     <div className="SkillsContainer">
-      {/* <h1 className="page-title"> My Skills</h1>{" "} */}
+      {/* <h1 className="page-title"> My Skills</h1> */}
+
       <div className="Skills__Buttons buttons">
         <button onClick={() => handleSKillsChange("getCoreSkills")}>
           Core Skills
@@ -35,21 +36,35 @@ function Skills() {
           Soft Skills
         </button>
       </div>
-      {/* <Plx
-        parallaxData={[
-          {
-            start: "self",
-            duration: 1100,
-            properties: [
-              {
-                startValue: 4000,
-                endValue: 0,
-                property: "translateX",
-              },
-            ],
-          },
-        ]}
-      > */}
+      <Plx
+        parallaxData={
+          [
+            // {
+            //   start: "self",
+            //   duration: 1000,
+            //   properties: [
+            //     {
+            //       startValue: 800,
+            //       endValue: 0,
+            //       property: "translateX",
+            //     },
+            //   ],
+            // },
+            // {
+            //   start: "self",
+            //   // startOffset: "-100vh",
+            //   duration: 800,
+            //   properties: [
+            //     {
+            //       startValue: 0,
+            //       endValue: 1,
+            //       property: "opacity",
+            //     },
+            //   ],
+            // },
+          ]
+        }
+      >
         <div className="Skills">
           {/* Card body starts here..  */}
           {skillsDisplayed.map((skills) => (
@@ -76,7 +91,7 @@ function Skills() {
                     />
                     <div className="Skills__card-frame-type">
                       {/* //! EDIT: title is place holder for type line  */}
-                      <h1 className="Skills__card-type">{skills.title}</h1>
+                      <h1 className="Skills__card-type   ">{skills.title}</h1>
 
                       <div id="card-set-icon">{skills.icon}</div>
                     </div>
@@ -84,8 +99,6 @@ function Skills() {
                       <p className="Skills__card-description ftb-inner-margin">
                         {skills.description}
                       </p>
-
-                      <p className="Skills__card-description"></p>
 
                       <p className="Skills__card-quote-text">
                         <b>&apos;{skills.quote}&apos;</b>
@@ -110,7 +123,8 @@ function Skills() {
             </div>
           ))}
         </div>
-      {/* </Plx> */}
+      </Plx>
+      <div className="empty" style={{ height: "120vw" }}></div>
     </div>
   );
 }
