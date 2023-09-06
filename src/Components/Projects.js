@@ -14,19 +14,11 @@ function Projects() {
             <div className="Projects__banner-image">
               {" "}
               <img src={project.image} alt={project.description} />
-              <a
-              
-               href={project.url}>
+              <a target="_blank" rel="noreferrer" href={project.url}>
                 <h2 className="Projects__title">{project.title}</h2>
+                <p className="Projects__description">{project.description}</p>
               </a>
-              <p className="Projects__description">{project.description}</p>
             </div>
-
-            {/* <div className="Projects__button-wrapper">
-
-              <button className="Projects__btn outline">DETAILS</button>
-
-            </div> */}
           </div>
         ))}
       </div>

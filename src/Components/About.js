@@ -9,18 +9,18 @@ function About() {
         parallaxData={[
           {
             start: "self",
-            startOffset: 50,
+            startOffset: 100,
             duration: 500,
             properties: [
               {
                 startValue: 0,
-                endValue: 360,
-                property: "rotate",
+                endValue: 2,
+                property: "opacity",
               },
               {
-                startValue: 0,
-                endValue: 1,
-                property: "opacity",
+                startValue: -5000,
+                endValue: 0,
+                property: "translateX",
               },
             ],
           },
@@ -42,7 +42,6 @@ function About() {
             companion, <em>Nola</em>, keeps me grounded and inspired.
           </p>
         </div>
-
         <div className="About__philosophy section">
           <h2>My Coding Philosophy</h2>
           <p>
@@ -53,7 +52,6 @@ function About() {
             the core of my professional growth.
           </p>
         </div>
-
         <div className="About__freetime section">
           <h2>Outside of Work</h2>
           <p>
@@ -65,7 +63,6 @@ function About() {
             simple joys of life.
           </p>
         </div>
-
         <div className="About__education-cert section">
           <h2>Education and Growth</h2>
           <p>

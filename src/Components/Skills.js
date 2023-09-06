@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Carousel from "react-multi-carousel";
-import Plx from "react-plx";
 import "react-multi-carousel/lib/styles.css";
 import "../Styles/Skills.scss";
 //
@@ -25,8 +23,6 @@ function Skills() {
 
   return (
     <div className="SkillsContainer">
-      
-
       <div className="Skills__Buttons buttons">
         <button onClick={() => handleSKillsChange("getCoreSkills")}>
           Core Skills
@@ -96,8 +92,6 @@ function Skills() {
           </div>
         ))}
       </div>
-
-      <div className="empty" style={{ height: "120vw" }}></div>
     </div>
   );
 }

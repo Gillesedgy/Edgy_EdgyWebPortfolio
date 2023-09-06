@@ -1,0 +1,34 @@
+//-------------------------------About ME---------------------------------
+
+//Todo: Import fonts
+.Parallax {
+  //   background-image:  url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
+  position: relative;
+}
+.Parallax__bio {
+  font-size: 16px;
+}
+.about,
+.skills,
+.projects,
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+//----------------------------------Skills------------------------------
+//   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
+.skills {
+  height: 80vh;
+  font-size: 100px;
+}
+
+//----------------------------------Projects------------------------------
+//   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
+//----------------------------------contact------------------------------
+//   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
