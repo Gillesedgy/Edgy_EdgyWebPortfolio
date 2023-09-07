@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "react-multi-carousel/lib/styles.css";
+
 import "../Styles/Skills.scss";
 //
 import { coreSkillsData } from "../assets/data/coreSkillsData";

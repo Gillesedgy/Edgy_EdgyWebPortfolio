@@ -12,6 +12,7 @@
 .skills,
 .projects,
 .contact {
+  z-index: -1;
   display: flex;
   flex-direction: column;
   margin-right: auto;
@@ -19,7 +20,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 //----------------------------------Skills------------------------------
 //   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
@@ -31,4 +32,6 @@
 //----------------------------------Projects------------------------------
 //   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
 //----------------------------------contact------------------------------
+.contact {
+}
 //   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");

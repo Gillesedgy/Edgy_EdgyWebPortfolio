@@ -10,15 +10,15 @@ import {
   AboutParallax,
   SkillsParallax,
   ProjectsParallax,
-  ContactParallax,
+  // ContactParallax,
 } from "./Components/Container/components";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <NavBar />
         <section id="home">
-          <NavBar />
           <Home />
         </section>
 
@@ -34,10 +34,9 @@ function App() {
         <section id="projects">
           <Projects />
         </section>
-        <ContactParallax />
-        <section id="contact">
-          <Contact />
-        </section>
+        {/* <ContactParallax /> */}
+        <section id="contact"></section>
+        <Contact />
       </Router>
     </div>
   );
