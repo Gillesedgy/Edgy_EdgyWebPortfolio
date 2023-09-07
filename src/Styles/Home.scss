@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Pixels&display=swap");
 .Home {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: auto;
   padding-top: 40px;
   text-align: center;
-
   &__background {
     position: fixed;
-    // left: 0;
     width: 90%;
     z-index: 1;
 
@@ -39,7 +40,6 @@
     margin: 0;
   }
   &__scr-info {
-    // border: 2px solid red;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -47,18 +47,12 @@
     top: 44vw;
   }
 
-  // &__bio,
   &__textSlider {
     width: 100%;
     left: 0;
     color: #007bff;
   }
-  // &__bio {
-  //   font-size: 1.4rem;
-  //   font-family: "Merryweather", sans-serif;
-  //   font-optical-sizing: auto;
-  // text-shadow: rgb(66, 62, 62) 1px 1px;
-  // }
+
   &__textSlider {
     height: 50px;
     font-weight: 700;
@@ -73,8 +67,6 @@
 @media only screen and (min-width: 1200px) {
   .Home {
     &__background {
-      // display: none;
-      // justify-content: center;
       width: 85%;
     }
 

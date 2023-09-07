@@ -57,7 +57,7 @@ function Home() {
           },
         ]}
       >
-        {/* <span className="Home__name">Hi</span>{" "} */}
+    
         <div className="Home__image">
           <img src={headshot} alt={headshot} />
         </div>

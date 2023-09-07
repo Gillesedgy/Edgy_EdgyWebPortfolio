@@ -17,52 +17,19 @@ function App() {
           <NavBar />
           <Home />
         </section>
-        <div className="empty" style={{ height: "120vw" }}></div>
-        {/* <Plx
-          parallaxData={[
-            {
-              start: "self",
-              startOffset: 50,
-              duration: 500,
-              properties: [
-                {
-                  startValue: 0,
-                  endValue: 360,
-                  property: "rotate",
-                },
-              ],
-            },
-          ]}
-        > */}
-          <section id="about">
-            <About />
-          </section>
-        {/* </Plx> */}
+
+        <section id="about">
+          <About />
+        </section>
+
         <section id="skills">
           <Skills />
         </section>
-        <div className="empty" style={{ height: "40vw" }}></div>
-        <Plx
-          parallaxData={[
-            {
-              start: "self",
-              duration: 1100,
-              properties: [
-                {
-                  startValue: -5000,
-                  endValue: 0,
-                  property: "translateX",
-                },
-              ],
-            },
-          ]}
-        >
-          {" "}
-          <section id="projects">
-            <Projects />
-          </section>
-        </Plx>{" "}
-        <div className="empty" style={{ height: "10vw" }}></div>{" "}
+
+        <section id="projects">
+          <Projects />
+        </section>
+
         <section id="contact">
           <Contact />
         </section>

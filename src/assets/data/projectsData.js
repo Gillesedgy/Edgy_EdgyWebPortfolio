@@ -1,4 +1,4 @@
-import imagess from "../images/headshot.png";
+import imagess from "../images/frontendC.png";
 export function projectData() {
   return [
     {

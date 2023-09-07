@@ -24,18 +24,6 @@ function About() {
               },
             ],
           },
-          // {
-          //   start: "self",
-          //   startOffset: "100vh",
-          //   duration: 500,
-          //   properties: [
-          //     {
-          //       startValue: 1,
-          //       endValue: 0,
-          //       property: "opacity",
-          //     },
-          //   ],
-          // },
         ]}
       >
         <div className="About__passionAndInterests section">
