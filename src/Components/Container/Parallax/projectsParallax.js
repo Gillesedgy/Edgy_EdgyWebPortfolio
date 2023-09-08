@@ -1,9 +1,10 @@
 import React from "react";
 import Plx from "react-plx";
 import "./parallax.scss";
+
 const projectsParallax = () => {
   return (
-    <div className="Parralax projects">
+    <div className="Parallax projects">
       <Plx
         parallaxData={[
           {
@@ -23,15 +24,14 @@ const projectsParallax = () => {
               },
               {
                 startValue: 0,
-                endValue: 5,
+                endValue: 3,
                 property: "scale",
               },
             ],
           },
         ]}
       >
-        {" "}
-        <h1 className="projects__heading">Projects</h1>
+        <h1>Projects</h1>
       </Plx>
     </div>
   );

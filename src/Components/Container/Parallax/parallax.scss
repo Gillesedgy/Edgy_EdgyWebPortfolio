@@ -4,6 +4,9 @@
 .Parallax {
   //   background-image:  url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
   position: relative;
+
+  height: 100dvh;
+  justify-content: space-evenly;
 }
 .Parallax__bio {
   font-size: 16px;
@@ -12,26 +15,56 @@
 .skills,
 .projects,
 .contact {
-  z-index: -1;
+  max-width: 90vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; // used for the about TEXT and Bio
   margin-right: auto;
   margin-left: auto;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  min-height: 100vh;
+  z-index: -1;
+
+  h1 {
+    font-size: 7rem;
+  }
 }
 //----------------------------------Skills------------------------------
 //   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
-.skills {
-  height: 80vh;
-  font-size: 100px;
-}
 
 //----------------------------------Projects------------------------------
+.projects {
+  h1 {
+    font-size: 6rem;
+  }
+}
 //   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
 //----------------------------------contact------------------------------
 .contact {
 }
 //   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
+
+// Media Queries
+@media screen and (max-width: 768px) {
+  .Parallax {
+    h1 {
+      transform: scale(0.45);
+      margin: auto;
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 4.8rem;
+    }
+  }
+
+  .Parallax__bio {
+    display: flex;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .projects {
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+}

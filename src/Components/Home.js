@@ -57,7 +57,6 @@ function Home() {
           },
         ]}
       >
-    
         <div className="Home__image">
           <img src={headshot} alt={headshot} />
         </div>
@@ -91,13 +90,7 @@ function Home() {
         <div className="Home__textSlider">
           <TextSlider />
         </div>
-        {/* <p className="Home__bio">
-          Been on a journey of continuous learning and growth. Here's a glimpse
-          into my world beyond the lines of code.
-        </p>{" "} */}
       </Plx>
-
-      {/* //Todo: Change font to something more comic book, fun  */}
     </div>
   );
 }

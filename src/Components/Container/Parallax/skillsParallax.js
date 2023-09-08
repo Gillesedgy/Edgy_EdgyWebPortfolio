@@ -8,17 +8,22 @@ const skillsParallax = () => {
         parallaxData={[
           {
             start: ".skills",
-            duration: 980,
+            duration: 990,
             properties: [
               {
-                startValue: 300,
-                endValue: 10,
-                property: "skewX",
+                startValue: -500,
+                endValue: 0,
+                property: "translateY"
               },
               {
                 startValue: 1,
                 endValue: 0.5,
                 property: "opacity",
+              },
+              {
+                startValue: 0,
+                endValue: 3,
+                property: "scale",
               },
             ],
           },

@@ -9,7 +9,7 @@ const aboutParallax = () => {
           {
             start: "self",
             startOffset: 50,
-            duration: 800,
+            duration: 1000,
             properties: [
               {
                 startValue: 0,
@@ -18,7 +18,7 @@ const aboutParallax = () => {
               },
               {
                 startValue: 1,
-                endValue: 9,
+                endValue: 3,
                 property: "scale",
               },
               {
@@ -38,7 +38,7 @@ const aboutParallax = () => {
             {
               start: ".Parallax__bio",
               startOffset: 50,
-              duration: 600,
+              duration: 1000,
               properties: [
                 {
                   startValue: 1,
