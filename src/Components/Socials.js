@@ -68,4 +68,5 @@ const Socials = () => {
     </div>
   );
 };
+
 export default Socials;

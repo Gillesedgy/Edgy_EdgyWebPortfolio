@@ -1,4 +1,4 @@
-import imagess from "../images/frontendC.png";
+import imagess from "../images/coreSkills/frontend.png";
 export function projectData() {
   return [
     {

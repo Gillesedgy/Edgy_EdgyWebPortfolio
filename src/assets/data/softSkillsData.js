@@ -1,9 +1,15 @@
+import scroll from "../images/softSkills/scroll.png";
+import empathy from "../images/softSkills/empathy.png";
+import collaboration from "../images/softSkills/collaboration.png";
+import problemSolving from "../images/softSkills/problemSolving.png";
+import adaptability from "../images/softSkills/adaptability.png";
+import time from "../images/softSkills/time.png";
 export function softSkillsData() {
   return [
     {
       title: "Communication",
       name: "The Enchanter's Crystal Scroll ",
-      // image: scroll,
+      image: scroll,
       description:
         "The Enchanter's Crystal Scroll card is the embodiment of effective communication and connection. Much like a magician's spellbook, this card allows characters to bridge gaps, convey intentions, and foster understanding in the game world.",
       // icon: <GiSatelliteCommunication />,
@@ -20,7 +26,7 @@ export function softSkillsData() {
     {
       title: "Enchant Spell: Soulbond",
       name: "Empathy",
-      // image: empathy,
+      image: empathy,
       description:
         " A compassionate and understanding character who always seeks to help others. They are patient and non-judgmental, making them a reliable source of support and guidance for other characters in the game. ",
       // icon: <GiSwordWound />,
@@ -38,7 +44,7 @@ export function softSkillsData() {
     {
       title: "Collaboration",
       name: "The Collective Conquest",
-      // image: collaborations,
+      image: collaboration,
       description:
         " It allows characters to weave their words into strong coding spells, ensuring that messages are understood with clarity and impact.",
       // icon: <GiTeamIdea />,
@@ -51,7 +57,7 @@ export function softSkillsData() {
     {
       title: "Problem solving",
       name: "Solver's Enigma",
-      // image: problemSolving,
+      image: problemSolving,
       description:
         "Embodies the art of unraveling mysteries and conquering challenges. Much like a magician conjures tricks, this card conjures ingenious solutions, turning complex problems into manageable quests.",
       // icon: <GiMultipleTargets />,
@@ -67,7 +73,7 @@ export function softSkillsData() {
     {
       title: "Artifact The Chameleon",
       name: "Adaptability",
-      // image: adaptability,
+      image: adaptability,
       description:
         "The Chameleon's Resilience card embodies the art of flexible and seamless adaptation. Much like a chameleon changes its colors to thrive in different environments, this card allows characters to navigate the ever-changing landscapes of the game world with ease.",
 
@@ -82,7 +88,7 @@ export function softSkillsData() {
     {
       title: "Artifact Time Management",
       name: "Temporal Maestro's Chronograph",
-      // image: time,
+      image: time,
       description:
         "The Temporal Maestro's Chronograph card embodies the art of controlling and optimizing time. Much like a magician's command over magic spells, I orchestrate the flow of time, ensuring that every moment is utilized to its fullest potential.",
       // icon: <GiExtraTime />,

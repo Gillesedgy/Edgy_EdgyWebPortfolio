@@ -24,7 +24,7 @@
   z-index: -1;
 
   h1 {
-    font-size: 7rem;
+    font-size: 4rem;
   }
 }
 //----------------------------------Skills------------------------------
@@ -33,7 +33,7 @@
 //----------------------------------Projects------------------------------
 .projects {
   h1 {
-    font-size: 6rem;
+    // font-size: 6rem;
   }
 }
 //   background-image: url("http://localhost:3000/static/media/MacBookAirframe.99931068ea026ff78eb2.png");
@@ -46,13 +46,13 @@
 @media screen and (max-width: 768px) {
   .Parallax {
     h1 {
-      transform: scale(0.45);
+      transform: scale(0.4);
       margin: auto;
     }
   }
   .projects {
     h1 {
-      font-size: 4.8rem;
+      // font-size: 36px;
     }
   }
 
@@ -64,7 +64,7 @@
 @media only screen and (max-width: 1180px) {
   .projects {
     h1 {
-      font-size: 4.5rem;
+      // font-size: 5rem;
     }
   }
 }

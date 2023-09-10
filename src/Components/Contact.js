@@ -60,7 +60,7 @@ function Contact() {
     <div className="Contact">
       <div id="toggle" onClick={toggleFormPopUp}>
         {isOpen ? (
-          <p></p>
+          <p>x</p>
         ) : (
           <img
             className="Contact__form-open-image"

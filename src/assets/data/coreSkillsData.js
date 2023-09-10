@@ -1,6 +1,10 @@
-import backend from "../images/backendC.png";
-import frontend from "../images/frontendC.png";
-import webApp from "../images/webAppC.png";
+import backend from "../images/coreSkills/backendC.png";
+import frontend from "../images/coreSkills/frontend.png";
+import webApp from "../images/coreSkills/webAppC.png";
+import API_Dev from "../images/coreSkills/APIDev.png";
+import deployment from "../images/coreSkills/deployment.png";
+import versionControl from "../images/coreSkills/version-control.png";
+
 export function coreSkillsData() {
   return [
     {
@@ -106,7 +110,7 @@ export function coreSkillsData() {
     {
       title: "Instant API Development",
       name: "Arcanex",
-      // image: APIdev,
+      image: API_Dev,
       description:
         "Gives the card user access to a portal to the digital realm, where data dances and information flows freely. This card bridges the gap between different software applications, allowing them to communicate and share their secrets.",
       // icon: <AiOutlineApi />,
@@ -119,7 +123,7 @@ export function coreSkillsData() {
     {
       title: "Deployment & Hosting",
       name: "Artifact Deployer, the Gatekeeper",
-      // image: deployment,
+      image: deployment,
       description:
         "By managing hosting, optimizing performance, and handling domain configurations, I'm the guide that leads your masterpiece to shine on the world wide web.",
       // icon: <AiOutlineDeploymentUnit />,
@@ -132,7 +136,7 @@ export function coreSkillsData() {
     {
       title: "Enchant Artifact",
       name: "Scriptweaver, Version Control/Git",
-      // image: versionControl,
+      image: versionControl,
       // imageB: versionControl2,
       description:
         " The user possesses an enigmatic demeanor, with a deep connection to the creatures of code. He is a silent observer, using his uncanny abilities to maintain order and harmony in the digital realm. ",

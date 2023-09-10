@@ -33,7 +33,7 @@
     text-transform: uppercase;
     font-style: "Merriweather", sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow: rgb(66, 62, 62) 2px 2px;
     position: relative;
     padding: 0;
@@ -81,23 +81,23 @@
 }
 
 @media only screen and (max-width: 768px) {
-//   .Home {
-//     height: 120vh;
-//     &__background {
-//       display: none;
-//     }
-//     &__scr-bg {
-//       bottom: 0;
+  //   .Home {
+  //     height: 120vh;
+  //     &__background {
+  //       display: none;
+  //     }
+  //     &__scr-bg {
+  //       bottom: 0;
 
-//       img {
-//         width: 0%;
-//       }
-//     }
-//     &__name,
-//     &__textSlider {
-//       color: whitesmoke;
-//     }
-//   }
+  //       img {
+  //         width: 0%;
+  //       }
+  //     }
+  //     &__name,
+  //     &__textSlider {
+  //       color: whitesmoke;
+  //     }
+  //   }
 }
 ///tablet
 @media only screen and (max-width: 1180px) {
@@ -116,6 +116,12 @@
       top: 20dvh;
       width: 100%;
       gap: 25px;
+    }
+    &__name {
+      font-size: 24px;
+    }
+    &__textSlider {
+      font-size: 36px;
     }
     &__name,
     &__textSlider {

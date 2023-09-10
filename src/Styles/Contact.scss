@@ -93,10 +93,9 @@
 
 // //! Mobile Responsiveness
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .Contact {
     &__form-profile-image {
-      border: 2px solid red;
       margin-top: 100px;
     }
     .close {
@@ -109,4 +108,3 @@
     }
   }
 }
-

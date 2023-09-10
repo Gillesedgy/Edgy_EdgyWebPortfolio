@@ -11,15 +11,10 @@ function Skills() {
   const [selectedSkills, setSelectedSkills] = useState("getCoreSkills"); // core skills will be the first set of skills desiplayes on page laod
   const skillsDisplayed =
     selectedSkills === "getCoreSkills" ? getCoreSkills : getSoftSkills; // this allows me to map thru both sets of data, soft and core
-  console.log("display Skills: ", skillsDisplayed);
 
   const handleSKillsChange = (category) => {
-    console.log("triggered");
     setSelectedSkills(category);
   }; // this allows me to toggle thru both sets of data, soft and core
-
-  // Todo: Update button position and translate distance.. currently, first card is being  push to far to the corner because of button postition and scale
-  //*
 
   return (
     <div className="SkillsContainer">
@@ -59,7 +54,6 @@ function Skills() {
                     loading="lazy"
                   />
                   <div className="Skills__card-frame-type">
-                    {/* //! EDIT: title is place holder for type line  */}
                     <h1 className="Skills__card-type   ">{skills.title}</h1>
 
                     <div id="card-set-icon">{skills.icon}</div>
