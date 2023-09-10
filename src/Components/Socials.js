@@ -1,51 +1,15 @@
 import React from "react";
-
+import "../Styles/Socials.scss";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLocationPinLock } from "react-icons/fa6";
-import { FaEnvelope } from "react-icons/fa";
-import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const Socials = () => {
   return (
-    <div className="Contact__direct-contact-container">
-      <ul className="Contact__contact-list">
-        <li className="Contact__list-item">
-          <i className="Contact__fa fa-map-marker fa-2x">
-            <FaLocationPinLock />
-          </i>{" "}
-          <span className="Contact__contact-text place">Brookyn, New York</span>
-        </li>
-
-        <li className="Contact__list-item">
-          <i className="Contact__fa fa-phone fa-2x">
-            <FaPhoneSquareAlt />{" "}
-          </i>{" "}
-          <span className="Contact__contact-text phone">
-            {/* //todo: Change href attribute to allow users to contact me via phone number */}
-            <a href="tel:1-929-555-6727" title="Give me a call">
-              (929) 555-1811
-            </a>
-          </span>
-        </li>
-        <li className="Contact__list-item">
-          <i className="Contact__fa fa-envelope fa-2x">
-            <FaEnvelope />
-          </i>{" "}
-          <span className="Contact__contact-text gmail">
-            {" "}
-            <a href="mailto:Gillesedgy@gmail.com" title="Send me an email">
-              Email me!
-            </a>
-          </span>
-        </li>
-      </ul>
-
-      <hr />
-      {/* //! Icon List */}
-      <ul className="Contact__social-media-list">
+    <div className="Socials">
+      <ul className="Socials__media-list">
         <li>
           <a
             href="https://github.com/Gillesedgy"
@@ -53,7 +17,7 @@ const Socials = () => {
             rel="noreferrer"
             className="Contact__contact-icon"
           >
-            <i className="Contact__fa fa-github" aria-hidden="true">
+            <i className="icon Socials__github" aria-hidden="true">
               <FaGithub />
             </i>
           </a>
@@ -65,7 +29,7 @@ const Socials = () => {
             rel="noreferrer"
             className="Contact__contact-icon"
           >
-            <i className="Contact__fa fa-spotify" aria-hidden="true">
+            <i className="icon Socials__spotify" aria-hidden="true">
               <FaLinkedin />
             </i>
           </a>
@@ -77,25 +41,30 @@ const Socials = () => {
             rel="noreferrer"
             className="Contact__contact-icon"
           >
-            <i className="Contact__fa fa-twitter" aria-hidden="true">
+            <i className="icon Socials__twitter" aria-hidden="true">
               <AiFillTwitterCircle />
             </i>
           </a>
         </li>
         <li>
           <a
-            href="https://twitter.com/GillesEdgy"
+            href="https://instagram.com/obvious_sir"
             target="_blank"
             rel="noreferrer"
             className="Contact__contact-icon"
           >
-            <i className="Contact__fa fa-instagram" aria-hidden="true">
+            <i className="icon Socials__instagram" aria-hidden="true">
               <FaInstagramSquare />
             </i>
           </a>
         </li>
       </ul>
-      <hr />
+      <div className="Socials__location">
+        <FaLocationPinLock />{" "}
+        <span className="Socials__location-text place">New York</span>
+        <div />
+        <br />
+      </div>
     </div>
   );
 };

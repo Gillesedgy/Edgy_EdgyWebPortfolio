@@ -3,6 +3,7 @@ import "../Styles/Contact.scss";
 import { FaPaperPlane } from "react-icons/fa";
 import formImg from "../assets/images/headshot.png";
 import emailjs from "@emailjs/browser";
+import Socials from "./Socials";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -14,7 +15,6 @@ function Contact() {
   const templateId = process.env.REACT_APP_TEMPLATE_ID;
   const serviceId = process.env.REACT_APP_SERVICE_ID;
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
-
 
   const onNameChange = (event) => {
     setName(event.target.value);
@@ -54,74 +54,73 @@ function Contact() {
   const toggleFormPopUp = () => {
     setIsOpen(!isOpen);
   };
+  // close form with key press
 
   return (
     <div className="Contact">
-      <div className="Contact__pop" onClick={toggleFormPopUp}>
-        Let's Connet{" "}
-      </div>{" "}
-      <div className="Contact__contact-wrapper">
-        {isOpen && (
-          <div className="formPopUp">
-            <img className="Contact__form-image" src={formImg} alt="Profile" />
-            <form
-              id="contact-form"
-              className="Contact__form-horizontal"
-              onSubmit={handleSubmit}
-            >
-              <label htmlFor="name"></label>
-              <input
-                type="text"
-                className="Contact__form-input"
-                id="name"
-                placeholder="Full Name"
-                name="name"
-                value={name}
-                onChange={onNameChange}
-                required
-              />
-
-              <label htmlFor="email"></label>
-              <input
-                type="email"
-                className="Contact__form-input"
-                id="email"
-                placeholder="Email"
-                name="email"
-                value={email}
-                onChange={onEmailChange}
-                required
-              />
-
-              <label htmlFor="message"></label>
-              <textarea
-                className="Contact__form-input "
-                rows="10"
-                placeholder="Hi Edgy, I wanted to take a moment to express my ... "
-                id="message"
-                name="message"
-                value={message}
-                onChange={onMessageChange}
-                required
-              ></textarea>
-              <button
-                className="Contact__btn btn-primary send-button"
-                id="submit"
-                type="submit"
-                // value={handleSubmit}
-              >
-                <div className="Contact__alt-send-button">
-                  <i className="Contact__fa fa-paper-plane">
-                    {" "}
-                    <FaPaperPlane />
-                  </i>
-                  <span className="Contact__send-text send-icon">SEND</span>
-                </div>
-              </button>
-            </form>
-          </div>
+      <div id="toggle" onClick={toggleFormPopUp}>
+        {isOpen ? (
+          <p></p>
+        ) : (
+          <img
+            className="Contact__form-open-image"
+            src={formImg}
+            alt="Profile"
+          />
         )}
-      </div>
+      </div>{" "}
+      {isOpen && (
+        <div className="Contact__form-popUp">
+          <div className="close" onClick={() => setIsOpen(!isOpen)}>
+            Close
+          </div>
+          <img
+            className="Contact__form-profile-image"
+            src={formImg}
+            alt="Profile"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+          <form id="contact-form" onSubmit={handleSubmit}>
+            <label htmlFor="name"></label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              name="name"
+              value={name}
+              onChange={onNameChange}
+              required
+            />
+
+            <label htmlFor="email"></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              name="email"
+              value={email}
+              onChange={onEmailChange}
+              required
+            />
+
+            <label htmlFor="message"></label>
+            <textarea
+              rows="10"
+              placeholder="Hi Edgy, I wanted to take a moment to ... "
+              id="message"
+              name="message"
+              value={message}
+              onChange={onMessageChange}
+              required
+            ></textarea>
+            <button className="send-button" id="submit" type="submit">
+              <FaPaperPlane />
+              <span className="Contact__send-text send-icon">SEND</span>
+            </button>
+          </form>
+          <Socials />
+        </div>
+      )}
     </div>
   );
 }

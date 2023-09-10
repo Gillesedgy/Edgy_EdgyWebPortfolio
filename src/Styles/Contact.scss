@@ -1,41 +1,112 @@
 .Contact {
-  // background-color: aqua;
-  height: 10dvh;
-  width: 10dvw;
   position: sticky;
+  max-width: 25vw;
+  left: 10px;
+  bottom: 25px;
   z-index: 100;
-  bottom: 0;
-  &__pop {
-    background-color: black;
-    transform: rotate(-90deg);
-    display: block;
-    text-align: center;
-    background-color: inherit;
-    color: inherit;
 
-    &:hover {
-      cursor: pointer;
-      background-color: whitesmoke;
-      color: black;
+  &__form-popUp {
+    max-height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4),
+      0 0 0 4px rgba(100, 102, 104, 0.6);
+
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(200%) blur(∏px);
+  }
+  &__form-open-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  &__form-profile-image {
+    border-bottom: 8px solid rgb(196, 198, 198, 0.2);
+    border-top: 4px solid rgb(196, 198, 198, 0.3);
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 150px;
+  }
+  input,
+  textarea {
+    color: rgb(0, 0, 0);
+    width: 50vw;
+    font-size: 16px;
+    background-color: rgba(240, 240, 240, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    &::placeholder {
+      color: #0c0c0c;
     }
   }
 
-  &__form-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  .send-button,
+  .close {
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(240, 240, 240, 0.5);
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    transition: all 0.2s;
+  }
+  .send-button {
+    height: 50px;
+  }
+  .send-button:hover,
+  .close:hover {
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 20%;
+    color: black;
+    text-transform: uppercase;
   }
 }
-// color: #00b16a;
-// color: #0078d7;
 
 // //! Mobile Responsiveness
 
-// @media only screen and (max-width: 600px) {
-// }
-// @media only screen and (max-width: 1240px) {
-//   .Contact {
-//     height: 100%;
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .Contact {
+    &__form-profile-image {
+      border: 2px solid red;
+      margin-top: 100px;
+    }
+    .close {
+      font-size: 12px;
+    }
+    .send-button {
+      min-width: 150px;
+      padding: 14px 16px;
+      margin-bottom: 55px;
+    }
+  }
+}
+
