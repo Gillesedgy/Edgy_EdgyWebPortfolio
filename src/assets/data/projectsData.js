@@ -9,7 +9,7 @@ export function projectData() {
       image: dotreduce,
       description:
         "dotCoin is a user-friendly app designed to help users track their daily expenses and income. It features customizable budget categories, real-time expense tracking, and insightful reports to visualize spending habits. Users can set budget goals and receive alerts when they're close to their limits",
-      url: "https://google.com/",
+      url: "https://dotreduce.netlify.app",
     },
     {
       title: "Note-It",
@@ -23,7 +23,7 @@ export function projectData() {
       image: outandabout,
       description:
         "ShopStreet is an e-commerce platform designed for small businesses...",
-      url: "https://google.com/",
+      url: "https://outandabt.netlify.app/",
     },
     {
       title: "GhibliGrub",
