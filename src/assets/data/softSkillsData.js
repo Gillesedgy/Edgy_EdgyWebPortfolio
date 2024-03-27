@@ -4,6 +4,22 @@ import collaboration from "../images/softSkills/collaboration.png";
 import problemSolving from "../images/softSkills/problemSolving.png";
 import adaptability from "../images/softSkills/adaptability.png";
 import time from "../images/softSkills/time.png";
+// icons and mana cost
+import { AiOutlineSolution } from "react-icons/ai";
+import { GiSwordWound } from "react-icons/gi";
+import { GiTeamIdea } from "react-icons/gi";
+import { GiExtraTime } from "react-icons/gi";
+import { GiSatelliteCommunication } from "react-icons/gi";
+import { GiMultipleTargets } from "react-icons/gi";
+import { GiTransform } from "react-icons/gi";
+import { GiTimeDynamite } from "react-icons/gi";
+import { GiJoin } from "react-icons/gi";
+import { GiPeaceDove } from "react-icons/gi";
+import { TbTransform } from "react-icons/tb";
+import { RiEmpathizeFill } from "react-icons/ri";
+import { RiKakaoTalkFill } from "react-icons/ri";
+import { MdSyncProblem } from "react-icons/md";
+
 export function softSkillsData() {
   return [
     {
@@ -12,15 +28,15 @@ export function softSkillsData() {
       image: scroll,
       description:
         "The Enchanter's Crystal Scroll card is the embodiment of effective communication and connection. Much like a magician's spellbook, this card allows characters to bridge gaps, convey intentions, and foster understanding in the game world.",
-      // icon: <GiSatelliteCommunication />,
+      icon: <GiSatelliteCommunication />,
       stack: [
-        // { name: "Community", icon: <RiKakaoTalkFill /> },
-        // { name: "Join", icon: <GiJoin /> },
+        { name: "Community", icon: <RiKakaoTalkFill /> },
+        { name: "Join", icon: <GiJoin /> },
       ],
 
       quote:
         "   In the realm of communication, I am the Ace of the deck, the harbinger of words and emotions. With me on your team, you hold the power to bridge worlds and forge connections that shape destinies.  ",
-      // level: "4/5",
+      level: "4/5",
       cardNumber: "69/250",
     },
     {
@@ -29,16 +45,16 @@ export function softSkillsData() {
       image: empathy,
       description:
         " A compassionate and understanding character who always seeks to help others. They are patient and non-judgmental, making them a reliable source of support and guidance for other characters in the game. ",
-      // icon: <GiSwordWound />,
+      icon: <GiSwordWound />,
       stack: [
         {
           name: "Empathize",
-          // icon: <RiEmpathizeFill />,
+          icon: <RiEmpathizeFill />,
         },
       ],
       quote:
         "Putting myself in the user's shoes drives me to create user-centric solutions that resonate with the intended audience.",
-      // level: <GiPeaceDove />,
+      level: <GiPeaceDove />,
       cardNumber: "65/250",
     },
     {
@@ -47,11 +63,11 @@ export function softSkillsData() {
       image: collaboration,
       description:
         " It allows characters to weave their words into strong coding spells, ensuring that messages are understood with clarity and impact.",
-      // icon: <GiTeamIdea />,
+      icon: <GiTeamIdea />,
       stack: [],
       quote:
         "With me on the playing field, your messages will captivate, resonate, and leave a lasting impact on the game world.",
-      // level: "5/4",
+      level: "5/4",
       cardNumber: "1/10",
     },
     {
@@ -60,14 +76,14 @@ export function softSkillsData() {
       image: problemSolving,
       description:
         "Embodies the art of unraveling mysteries and conquering challenges. Much like a magician conjures tricks, this card conjures ingenious solutions, turning complex problems into manageable quests.",
-      // icon: <GiMultipleTargets />,
+      icon: <GiMultipleTargets />,
       stack: [
-        // { name: "problem", icon: <MdSyncProblem /> },
-        // { name: "Solution", icon: <AiOutlineSolution /> },
+        { name: "problem", icon: <MdSyncProblem /> },
+        { name: "Solution", icon: <AiOutlineSolution /> },
       ],
       quote:
         "I am the Solver's Enigma, the keeper of puzzles and the weaver of solutions. With me in your hand, no challenge is too perplexing, and no problem is insurmountable.",
-      // level: "3/4",
+      level: "3/4",
       cardNumber: "38/250",
     },
     {
@@ -77,11 +93,11 @@ export function softSkillsData() {
       description:
         "The Chameleon's Resilience card embodies the art of flexible and seamless adaptation. Much like a chameleon changes its colors to thrive in different environments, this card allows characters to navigate the ever-changing landscapes of the game world with ease.",
 
-      // icon: <GiTransform />,
+      icon: <GiTransform />,
       stack: [],
       quote:
         "Change is my ally. I pivot seamlessly to accommodate shifting requirements.",
-      // level: <TbTransform />,
+      level: <TbTransform />,
       cardNumber: "30/50",
     },
 
@@ -91,11 +107,11 @@ export function softSkillsData() {
       image: time,
       description:
         "The Temporal Maestro's Chronograph card embodies the art of controlling and optimizing time. Much like a magician's command over magic spells, I orchestrate the flow of time, ensuring that every moment is utilized to its fullest potential.",
-      // icon: <GiExtraTime />,
+      icon: <GiExtraTime />,
       stack: [],
       quote:
         "I orchestrate the symphony of time in the game world, making every second count.",
-      // level: <GiTimeDynamite />,
+      level: <GiTimeDynamite />,
       cardNumber: "79/100",
     },
   ];

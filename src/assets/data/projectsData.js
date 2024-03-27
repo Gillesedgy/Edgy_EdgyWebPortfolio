@@ -13,7 +13,7 @@ export function projectData() {
       image: imagess,
       description:
         "Not-It is a sleek and intuitive note-taking app that allows users to organize their thoughts and ideas efficiently. Features include rich text editing, note categorization, and a powerful search function.",
-      url: "https://google.com/",
+      url: "https://edgenotes.netlify.app/",
     },
     {
       title: "ShopStreet",

@@ -2,7 +2,6 @@
   max-width: 90vw;
   margin: auto;
   padding-top: 120px;
-  // overflow-y: scroll;
   max-height: auto;
   margin-bottom: 20px;
 }
@@ -93,8 +92,7 @@
   &__card-image,
   &__card-frame-header,
   &__card-frame-type {
-    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #0078d7, -2px 1px 1px 5px #171314;
-    // margin-bottom: 7px;
+    box-shadow: 0 0 0 2px #171314, 0 0 0 4px #0078d7, -2px 1px 1px 5px #171314;
   }
 
   &__card-image {
@@ -103,21 +101,21 @@
   }
 
   &__card-frame-text-box {
-    // margin: 0 7px;
+    margin: 0 7px;
     color: #000000;
     background: #d3ded6;
     display: flex;
     height: 500px;
     flex-direction: column;
     justify-content: space-around;
-
-    font-size: 0.9em;
-    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #0078d7, -2px 1px 1px 5px #171314;
+    font-size: 0.85em;
+    padding: 5px 4px;
+    box-shadow: 0 0 0 2px #171314, 0 0 0 4px #0078d7, -2px 1px 1px 5px #171314;
   }
 
   &__card-quote-text {
     font-style: italic;
-    padding: 5px 0;
+    padding: 5px 4px;
     font-size: 0.7em;
   }
 
@@ -155,12 +153,15 @@
     flex-basis: 41px;
     height: 30px;
     position: relative;
-    bottom: 11px;
+    bottom: 10px;
     z-index: 2;
     background: #ffffff;
     box-shadow: 0 0 0 4px #171314;
     p {
-      padding: 5px 9px;
+      position: absolute;
+      padding: 0 9px;
+      bottom: 2px;
+      align-items: center;
       color: #000000;
     }
   }
@@ -170,7 +171,6 @@
     font-size: 1.5em;
     width: 1.8rem;
     overflow: hidden;
-    margin-top: 25px;
     align-self: center;
     color: goldenrod;
   }
@@ -178,7 +178,7 @@
   #card-stack-mana {
     font-size: small;
     padding-right: 3px;
-    height: 3px;
+    // height: inherit;
     align-self: center;
     ul {
       display: flex;
@@ -252,15 +252,6 @@
     }
   }
   .Skills {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-
-    &__card-container {
-      width: 80%;
-      margin: 20px 10px;
-    }
     &__card-image {
     }
     &__card-frame-text-box {
