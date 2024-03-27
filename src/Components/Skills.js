@@ -8,7 +8,7 @@ import { softSkillsData } from "../assets/data/softSkillsData";
 function Skills() {
   const getCoreSkills = coreSkillsData();
   const getSoftSkills = softSkillsData();
-  const [selectedSkills, setSelectedSkills] = useState("getCoreSkills"); // core skills will be the first set of skills desiplayes on page laod
+  const [selectedSkills, setSelectedSkills] = useState("getCoreSkills"); // core skills will be the first set of skills desplayed on page laod
   const skillsDisplayed =
     selectedSkills === "getCoreSkills" ? getCoreSkills : getSoftSkills; // this allows me to map thru both sets of data, soft and core
 
