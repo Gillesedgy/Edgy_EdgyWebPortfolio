@@ -87,8 +87,8 @@ export function softSkillsData() {
       cardNumber: "38/250",
     },
     {
-      title: "Artifact The Chameleon",
-      name: "Adaptability",
+      title: "Artifact: Adaptability",
+      name: "The Chameleon",
       image: adaptability,
       description:
         "The Chameleon's Resilience card embodies the art of flexible and seamless adaptation. Much like a chameleon changes its colors to thrive in different environments, this card allows characters to navigate the ever-changing landscapes of the game world with ease.",
@@ -102,8 +102,8 @@ export function softSkillsData() {
     },
 
     {
-      title: "Artifact Time Management",
-      name: "Temporal Maestro's Chronograph",
+      title: "Artifact: Time Management",
+      name: "Maestro's Chronograph",
       image: time,
       description:
         "The Temporal Maestro's Chronograph card embodies the art of controlling and optimizing time. Much like a magician's command over magic spells, I orchestrate the flow of time, ensuring that every moment is utilized to its fullest potential.",

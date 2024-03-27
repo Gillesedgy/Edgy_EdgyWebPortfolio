@@ -5,7 +5,8 @@
   justify-content: center;
   position: absolute;
   bottom: 0;
-  width: 90%;
+  top:91%;
+  width: 85%;
 
   &__media-list {
     display: flex;
@@ -43,8 +44,8 @@
 @media screen and (max-width: 768px) {
   .Socials {
     &__media-list {
-      margin-right: 40px;
-      margin-top: 400px;
+      // margin-right: 40px;
+      // margin-top: 400px;
       li {
         background-color: rgb(247, 244, 244, 0.4);
       }

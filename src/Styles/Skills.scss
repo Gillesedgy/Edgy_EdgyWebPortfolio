@@ -6,14 +6,8 @@
   margin-bottom: 20px;
 }
 .Skills {
-  // margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
   padding-bottom: 4%;
-
+  z-index: 1;
   &__card-container {
     border: 1px solid #000000;
     width: 375px; //
@@ -45,7 +39,7 @@
     z-index: 1;
     position: relative;
     height: 100%;
-    max-width: 97%;
+    max-width: 91%;
     top: 0.5%;
     left: 3.1%;
     display: flex;
@@ -63,8 +57,7 @@
     border-left: 2px solid #c0c0c0;
     border-top: 1px solid #00b16a;
     border-right: 2px solid #00b16a;
-    display: flex;
-    justify-content: space-between;
+
     border-radius: 18px;
     margin-top: 12px;
     margin-left: 5px;
@@ -255,8 +248,14 @@
     &__card-image {
     }
     &__card-frame-text-box {
-      height: 250px;
+      // height: 250px;
     }
+  }
+  #card-stack-mana {
+    display: none;
+  }
+  #card-set-icon {
+    display: none;
   }
 }
 //*----------------------------------------------------------------

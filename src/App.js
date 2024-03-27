@@ -12,7 +12,7 @@ import {
   ProjectsParallax,
   // ContactParallax,
 } from "./Components/Container/components";
-
+import "./index.css"
 function App() {
   return (
     <div className="App">

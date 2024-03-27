@@ -3,10 +3,10 @@
   max-width: 25vw;
   left: 10px;
   bottom: 25px;
-  z-index: 100;
+  z-index: 1000;
 
   &__form-popUp {
-    max-height: 90%;
+    max-height: 95%;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -31,12 +31,12 @@
   &__form-profile-image {
     border-bottom: 8px solid rgb(196, 198, 198, 0.2);
     border-top: 4px solid rgb(196, 198, 198, 0.3);
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 15%;
     border-radius: 50%;
     cursor: pointer;
     display: block;
-    margin-top: 10px;
+    margin-top: 25px;
   }
   #contact-form {
     display: flex;
@@ -99,7 +99,7 @@
       margin-top: 100px;
     }
     .close {
-      font-size: 12px;
+      font-size: 14px;
     }
     .send-button {
       min-width: 150px;

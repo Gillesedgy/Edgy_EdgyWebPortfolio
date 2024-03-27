@@ -27,10 +27,10 @@ export function coreSkillsData() {
   return [
     {
       title: "Frontend Development",
-      name: "Zephyrion, the UI Artificer",
+      name: "Zephyrion",
       image: frontend,
       description:
-        "Proficient in HTML, CSS, and JavaScript, The Frontend Enchanter is the master of user experiences in the digital realm. With a magical touch, they craft captivating visuals and intuitive interfaces that bring software and websites to life.",
+        "Proficient in HTML, CSS, and JavaScript, The UI Artificer is the master of user experiences in the digital realm. With a magical touch, they craft captivating visuals and intuitive interfaces that bring software and websites to life.",
       icon: <SiFrontendmentor />,
       stack: [
         {
@@ -58,7 +58,7 @@ export function coreSkillsData() {
 
     {
       title: "Backend Development",
-      name: "Cipherex, the Server Magus",
+      name: "Cipherex",
       image: backend,
       description:
         "I architect databases, develop APIs, and construct the backbone that supports seamless user interactions.",
@@ -140,7 +140,7 @@ export function coreSkillsData() {
     },
     {
       title: "Deployment & Hosting",
-      name: "Artifact Deployer, the Gatekeeper",
+      name: "Artifact Deployer",
       image: deployment,
       description:
         "By managing hosting, optimizing performance, and handling domain configurations, I'm the guide that leads your masterpiece to shine on the world wide web.",
@@ -152,8 +152,8 @@ export function coreSkillsData() {
       cardNumber: "22/250",
     },
     {
-      title: "Enchant Artifact",
-      name: "Scriptweaver, Version Control/Git",
+      title: "Version Control/Git",
+      name: "Scriptweaver ",
       image: versionControl,
       description:
         " The user possesses an enigmatic demeanor, with a deep connection to the creatures of code. He is a silent observer, using his uncanny abilities to maintain order and harmony in the digital realm. ",
