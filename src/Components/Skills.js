@@ -20,7 +20,7 @@ function Skills() {
   }; // this allows me to toggle thru both sets of data, soft and core
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -66,13 +66,13 @@ function Skills() {
                     <div className="Skills__card-frame-header">
                       <h1 className="Skills__card-name">{skills.name}</h1>
                       {/* <!-- Place Tech Stack Here --> */}
-                      <div id="card-stack-mana">
+                      {/* <div id="card-stack-mana">
                         <ul>
-                          {skills.stack.map((item, index) => (
-                            <li key={index}>{item.icon}</li>
+                        {skills.stack.map((item, index) => (
+                          <li key={index}>{item.icon}</li>
                           ))}
-                        </ul>
-                      </div>
+                          </ul>
+                        </div> */}
                     </div>{" "}
                     {/* <!--Skills image--> */}
                     <img
@@ -82,9 +82,10 @@ function Skills() {
                       loading="lazy"
                     />
                     <div className="Skills__card-frame-type">
-                      <h1 className="Skills__card-type   ">{skills.title}</h1>
-
-                      <div id="card-set-icon">{skills.icon}</div>
+                      <h1 className="Skills__card-type   ">
+                        {skills.title}
+                        {/* <span id="card-set-icon">{skills.icon}</span> */}
+                      </h1>
                     </div>
                     <div className="Skills__card-frame-text-box">
                       <p className="Skills__card-description ftb-inner-margin">

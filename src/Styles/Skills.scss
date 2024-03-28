@@ -54,10 +54,12 @@
 
   &__card-frame-header,
   &__card-frame-type {
+
+
+
     border-left: 2px solid #c0c0c0;
     border-top: 1px solid #00b16a;
     border-right: 2px solid #00b16a;
-
     border-radius: 18px;
     margin-top: 12px;
     margin-left: 5px;
@@ -160,9 +162,9 @@
   }
 
   #card-set-icon {
-    height: inherit;
+    // height: inherit;
     font-size: 1.5em;
-    width: 1.8rem;
+    // width: 1.8rem;
     overflow: hidden;
     align-self: center;
     color: goldenrod;
@@ -171,7 +173,7 @@
   #card-stack-mana {
     font-size: small;
     padding-right: 3px;
-    // height: inherit;
+    height: inherit;
     align-self: center;
     ul {
       display: flex;
